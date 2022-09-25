@@ -94,8 +94,9 @@ ggplot(data=imdb, aes(x=Rate)) +
 
 # діаграма щільності + гістограма
 ggplot(data=imdb, aes(x=Rate)) +
-  geom_density(lwd = 1.2, fill='#bdb8df', alpha=0.7) +
+  geom_density(lwd = 1.2, fill='#bdb8df', alpha=0.4) +
   geom_histogram(
+    aes(y=..density..),
     fill="#bdb8df",
     color="darkslateblue",
     alpha=0.7,
