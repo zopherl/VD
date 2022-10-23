@@ -122,5 +122,5 @@ library(rayshader)
 eumapray <- ggplot(eu) + theme_bw() +
   geom_sf(aes(fill = gdp), color = "grey") +
   scale_fill_distiller(palette = "PuBu")
-plot_gg(eu.map2, multicore = T, scale=250, windowsize = c(700,700))
+plot_gg(eumapray, multicore = T, scale=250, windowsize = c(700,700))
 eumapray
